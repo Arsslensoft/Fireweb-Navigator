@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{708336B8-D73A-4CC4-8D67-6533A0E2B9A0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fireweb</RootNamespace>
+    <AssemblyName>Fireweb Navigator</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ApplicationIcon>image3.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\Bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <OutputPath>..\..\Bin\</OutputPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevComponents.DotNetBar2, Version=11.2.0.1, Culture=neutral, PublicKeyToken=c39c3242a43eee2b, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="geckofx-core-21, Version=21.0.1.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Research\geckofx-geckofx-21.0-370e76063b5c\Geckofx-Winforms\bin\Release\geckofx-core-21.dll</HintPath>
+    </Reference>
+    <Reference Include="Geckofx-Winforms-21, Version=21.0.1.0, Culture=neutral, PublicKeyToken=3209ac31600d1857, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Research\geckofx-geckofx-21.0-370e76063b5c\Geckofx-Winforms\bin\Release\Geckofx-Winforms-21.dll</HintPath>
+    </Reference>
+    <Reference Include="LinqBridge, Version=1.0.0.0, Culture=neutral, PublicKeyToken=c2b14eb747628076, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Kavprot smart security\Bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AboutFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AboutFrm.Designer.cs">
+      <DependentUpon>AboutFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AntiCrash.cs" />
+    <Compile Include="BookmarkFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BookmarkFrm.Designer.cs">
+      <DependentUpon>BookmarkFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ClearForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ClearForm.Designer.cs">
+      <DependentUpon>ClearForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CookiesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CookiesForm.Designer.cs">
+      <DependentUpon>CookiesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Downloader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Downloader.Designer.cs">
+      <DependentUpon>Downloader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DownloadFrm.Designer.cs">
+      <DependentUpon>DownloadFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HistoryFrm.Designer.cs">
+      <DependentUpon>HistoryFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PluginFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PluginFrm.Designer.cs">
+      <DependentUpon>PluginFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Popupfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Popupfrm.Designer.cs">
+      <DependentUpon>Popupfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AboutFrm.resx">
+      <DependentUpon>AboutFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BookmarkFrm.resx">
+      <DependentUpon>BookmarkFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ClearForm.resx">
+      <DependentUpon>ClearForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CookiesForm.resx">
+      <DependentUpon>CookiesForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Downloader.resx">
+      <DependentUpon>Downloader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DownloadFrm.resx">
+      <DependentUpon>DownloadFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HistoryFrm.resx">
+      <DependentUpon>HistoryFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PluginFrm.resx">
+      <DependentUpon>PluginFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Popupfrm.resx">
+      <DependentUpon>Popupfrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SettingsFrm.resx">
+      <DependentUpon>SettingsFrm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="SettingsFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SettingsFrm.Designer.cs">
+      <DependentUpon>SettingsFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SettingsManager.cs" />
+    <Compile Include="Trace.cs" />
+    <Compile Include="TrecoAutoCompleteListener.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="TrecoAutoCompleteListener.designer.cs">
+      <DependentUpon>TrecoAutoCompleteListener.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lock_arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unlock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="image3.ico" />
+    <None Include="Resources\cookie.png" />
+    <None Include="Resources\zoom.png" />
+    <None Include="Resources\wind.png" />
+    <None Include="Resources\utilities.png" />
+    <None Include="Resources\undo.png" />
+    <None Include="Resources\sq_br_up.ico" />
+    <None Include="Resources\sq_br_down.ico" />
+    <None Include="Resources\source.png" />
+    <None Include="Resources\selectall.png" />
+    <None Include="Resources\security1.png" />
+    <None Include="Resources\screenshot.png" />
+    <None Include="Resources\save.png" />
+    <None Include="Resources\robot.png" />
+    <None Include="Resources\reload.png" />
+    <None Include="Resources\redo.png" />
+    <None Include="Resources\private.png" />
+    <None Include="Resources\print.png" />
+    <None Include="Resources\plustb.png" />
+    <None Include="Resources\paste.png" />
+    <None Include="Resources\page.png" />
+    <None Include="Resources\open.png" />
+    <None Include="Resources\new-item.png" />
+    <None Include="Resources\manager.png" />
+    <None Include="Resources\listen.ico" />
+    <None Include="Resources\key.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\history.png" />
+    <None Include="Resources\globe.ico" />
+    <None Include="Resources\forward.png" />
+    <None Include="Resources\xpinstallItemGeneric.png" />
+    <None Include="Resources\firedragon.jpg" />
+    <None Include="Resources\find.png" />
+    <None Include="Resources\EV.ico" />
+    <None Include="Resources\download.png" />
+    <None Include="Resources\defender.png" />
+    <None Include="Resources\cut.png" />
+    <None Include="Resources\copy.png" />
+    <None Include="Resources\console.png" />
+    <None Include="Resources\clean.png" />
+    <None Include="Resources\certificate.png" />
+    <None Include="Resources\back.png" />
+    <None Include="Resources\autocomplete.png" />
+    <None Include="Resources\add_to_bookmarks.png" />
+    <None Include="Resources\about.png" />
+    <None Include="Resources\stop.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
